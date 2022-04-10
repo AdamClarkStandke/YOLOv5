@@ -1,15 +1,13 @@
 # Object Detection
 
-## Detection using the Faster R-CNN Model (no seperate training, just pre-trained for now)
-First test implementation of the Faster R-CNN model with a ResNet-50-FPN backbone. Implementation is detailed by Ivan Vasiley in his book: Advanced deep learning with Python. Inference was tested with a random image I had on my phone,at the time, which contains two things: a person (ie. Alexis) and a cute puppy dog (ie. Misha). 
-![alt text](https://github.com/aCStandke/FasterR-CNN/blob/main/Faster%20R-CNN.png)
-The pre-trained model was able to detect two things, but the classification was wrong (obviously!). The reason for this might be due to the model being trained on more images that contain unions rather than intersections (i.e. less complex data) and/or the ROI pooling layer(will test image using YOLOv5 model to see if this intuition is true or not! (when I get to it)). As always, code is found in the file: [Faster R-CNN.py](https://github.com/aCStandke/Object-Detection/blob/main/Faster%20R-CNN.py)
+## Default Detection Faster R-CNN Model (no seperate training, just pre-trained)
+First test implementation of the Faster R-CNN model with a ResNet-50-FPN backbone. Implementation is detailed by Ivan Vasiley in his book: Advanced deep learning with Python. Inference was tested with a random image I had on my phone,at thetime, which contains two things: a person and a cute puppy dog. When using a score threshold of 0.9 the result was this
+detection and classification:![alt text](https://github.com/aCStandke/FasterR-CNN/blob/main/FasterR-CNN2.png)
+When using a score threshold of 0.5 the result was this detection and classification:![alt text](https://github.com/aCStandke/FasterR-CNN/blob/main/Faster%20R-CNN.png) code is found in the file: [Faster R-CNN.py](https://github.com/aCStandke/Object-Detection/blob/main/Faster%20R-CNN.py)
 
-## Detection using the YOLOv5s Model (no seperate training, just pre-trained for now)
-First test implementation of the YOLOv5s model. Inferece was tested with the two images provided. As always, code is found in the file: [Yolo.ipynb](https://github.com/aCStandke/Object-Detection/blob/main/Yolo.ipynb)    
-![alt text](https://github.com/aCStandke/FasterR-CNN/blob/main/runs/detect/exp/zidane.jpg)
-![alt text](https://github.com/aCStandke/FasterR-CNN/blob/main/runs/detect/exp/bus.jpg)
+## Default Detection YOLOv5s Model (no seperate training, just pre-trained)
+First test implementation of the YOLOv5s model.Inference was tested with a random image I had on my phone, at the time, which contains two things: a person and cute puppy dog. When using  a confidence level of 0.25 (other default details found in the code),the result was this detection and classification:![alt text](https://github.com/aCStandke/FasterR-CNN/blob/main/YOLOv5s.png) code is found in the file: [YOLOv5s vs Faster R-CNN.ipynb](https://github.com/aCStandke/Object-Detection/blob/main/YOLOv5s%20vs%20Faster%20R-CNN.ipynb)
 
 ## Training Object Detection using Faster R-CNN Model and YOLOv5s on Racoon Dataset 
-To do...............when I get to it! lol
+
 

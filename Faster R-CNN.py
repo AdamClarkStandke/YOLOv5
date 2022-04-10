@@ -56,7 +56,7 @@ with open(classes_file, 'r') as f:
 
 # printing the differnt classes that can be detected
 # by faster R-CNN
-print(classes)
+# print(classes)
 
 
 # In[5]:
@@ -65,9 +65,7 @@ print(classes)
 # getting test image for object detection
 image = cv2.imread('/mnt/chromeos/GoogleDrive/MyDrive/Datasets/baby.PNG')
 # displaying generic test image with no detection and labels
-#plt.imshow(image)
-#plt.axis('off')
-#plt.show()
+
 
 
 # In[6]:
@@ -80,7 +78,7 @@ model = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
 # In[7]:
 
 
-summary(model)
+# summary(model)
 
 
 # In[8]:
@@ -117,7 +115,7 @@ colors = np.random.uniform(0,255, size=(len(classes), 3))
 for box, box_class, score in zip(output[0]['boxes'].detach().numpy(), 
                                 output[0]['labels'].detach().numpy(),
                                 output[0]['scores'].detach().numpy()):
-    # filter the boxes by CI score(usually 0.5)
+    # filter the boxes by CI score
     if score > 0.9:
         # transform bounding box format to be 
         # top-left and bottom-right pixels of box (has to be integers)
@@ -138,7 +136,7 @@ for box, box_class, score in zip(output[0]['boxes'].detach().numpy(),
 
 
 cv2.imshow('Object detection', image)
-cv2.imwrite('Faster R-CNN.png', image)
+cv2.imwrite('FasterR-CNN2.png', image)
 
 # In[ ]:
 
