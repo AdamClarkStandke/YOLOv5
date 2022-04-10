@@ -14,6 +14,7 @@ code is found in the file: [Faster R-CNN.py](https://github.com/aCStandke/Object
 
 ## Default Detection YOLOv5s Model (no seperate training, just pre-trained)
 First test implementation of the YOLOv5s model.Inference was tested with a random image I had on my phone, at the time, which contains two things: a person and a cute puppy dog. When using  a confidence level of 0.25 (other default details found in the code),the result was this detection and classification:
+
 ![alt text](https://github.com/aCStandke/FasterR-CNN/blob/main/YOLOv5s.png) 
 
 code is found in the file: [YOLOv5s vs Faster R-CNN.ipynb](https://github.com/aCStandke/Object-Detection/blob/main/YOLOv5s%20vs%20Faster%20R-CNN.ipynb)
