@@ -1,5 +1,6 @@
 # Training Object Detection on YOLOv5s on Racoon Dataset 
 
+## Click image to find if the vision model can find this pesky raccoon:
 [![IMAGE ALT TEXT](https://github.com/aCStandke/Object-Detection/blob/main/mq2.jpg)](https://youtu.be/_8vjy7NFb2M)
 
 ## Batch-zero val images labels
