@@ -1,10 +1,10 @@
-# Training Object Detection on YOLOv5s on Racoon Dataset 
+# Training Object Detection on YOLOv5s on Raccoon Dataset 
 
 ## Click image to find if the vision model can find this pesky raccoon:
 [![IMAGE ALT TEXT](https://github.com/aCStandke/Object-Detection/blob/main/mq2.jpg)](https://youtu.be/_8vjy7NFb2M)
 
 # YOLO Model
-Yolo works by spliting an image into a S by S gird of cells and the network looks over the grid cells as regions where objects may be located and assigns a bounding box to them; but one bounding box is associated with one gird cell even if the bounding box covers multiple cells based on the bounding box's center. 
+Yolo works by splitting an image into a S by S gird of cells and the network looks over the grid cells as regions where objects may be located and assigns a bounding box to them; but one bounding box is associated with one gird cell even if the bounding box covers multiple cells based on the bounding box's center. 
 
 ## One object:
 The network will output an array consisting of the following: 1) the object's bounding box if it exists, containing the box's x and y center coordinates and the box's height and width as determined through regression with l2 loss. See this video for a quick refresher on object location: [object location](https://www.youtube.com/watch?v=LZRfHkTNQqo) and 2)the classification of the image in the form of a probability called the confidence score. 
